@@ -36,11 +36,13 @@ cc.Class({
             var fishData = event.detail;
             var s = cc.pSub(cc.v2(fishData.node.x,fishData.node.y), cc.v2(self.node.x,self.node.y));
             cc.log(s);
-            var test = cc.pSub(cc.v2(s.x,s.y), cc.v2(fishListPos.x,fishListPos.y));
-            cc.log(test);
+            var test = cc.pSub(cc.v2(s.x,s.y), cc.v2(fishListPos.x,fishListPos.y)); 
             
             var node =  cc.instantiate(self.fishList[fishData.id]);
             node.parent = self.node.getChildByName('FishList');
+            node.setPosition(test.x, test.y);
+            node.scaleX  = fishData.node.scaleX;
+            node.rotation  = fishData.node.rotation;
         });
     },
     chugan: function () {
