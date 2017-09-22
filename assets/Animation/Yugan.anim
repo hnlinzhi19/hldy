@@ -1,0 +1,92 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Yugan",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.9,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 110
+        },
+        {
+          "frame": 0.7,
+          "value": 0
+        }
+      ],
+      "x": [
+        {
+          "frame": 0,
+          "value": 408
+        }
+      ]
+    },
+    "paths": {
+      "YuxianBlock/yuxian": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.7,
+              "value": 116
+            },
+            {
+              "frame": 0.9,
+              "value": -141.6
+            }
+          ]
+        }
+      },
+      "YuerBlock": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.6,
+              "value": 0
+            },
+            {
+              "frame": 0.7,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.7,
+              "value": -90.6
+            },
+            {
+              "frame": 0.9,
+              "value": -329.9
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0.6,
+      "func": "addYuer",
+      "params": []
+    },
+    {
+      "frame": 0.9,
+      "func": "chuganCb",
+      "params": []
+    }
+  ]
+}
